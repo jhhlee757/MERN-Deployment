@@ -4,6 +4,7 @@ import { Link, navigate } from '@reach/router';
 
 
 
+
 class ThePets extends Component {
     constructor(props) {
       super(props);
@@ -18,7 +19,7 @@ class ThePets extends Component {
       return (
         <div>
             <p>Likes: {this.state.likes}</p>
-            <button disabled={this.state.likes} onClick={this.vote} id={this.props.petId}>Like this pet</button>
+            <button class="btn btn-warning"disabled={this.state.likes} onClick={this.vote} id={this.props.petId}>Like this pet</button>
         </div>
       )
     }
@@ -42,19 +43,26 @@ export default props => {
     
     return (
         <div>
-            <h3>Pet Shelter</h3>
-            <h4>Details about {pet.name}</h4>
-            <p>Pet type: {pet.type}</p>
-            <p>Description: {pet.description}</p>
-            <p>Skills: 
-                <p>{pet.skill1}</p>
-                <p>{pet.skill2}</p>
-                <p>{pet.skill3}</p>
-            </p>
-            <ThePets petId={pet.id}/>
-            <button onClick={(e)=>{deletePet(pet._id)}}>Adopt this pet!</button>
-            <br/>
-            <br/>
+            <div className="container">
+                <div className="jumbotron" style={{
+                    backgroundColor: "Dodgerblue"
+                }}>
+                <h3>Pet Shelter</h3>
+                <h4>Details about {pet.name}</h4>
+                </div>
+                <p>Pet type: {pet.type}</p>
+                <p>Description: {pet.description}</p>
+                <p>Skills: 
+                    <p>{pet.skill1}</p>
+                    <p>{pet.skill2}</p>
+                    <p>{pet.skill3}</p>
+                </p>
+                <ThePets petId={pet.id}/>
+                <br/>
+                <button class="btn btn-danger" onClick={(e)=>{deletePet(pet._id)}}>Adopt this pet!</button>
+                <br/>
+                <br/>
+            </div>
             <Link to={"/pets"}>Home</Link>
         </div>
     )

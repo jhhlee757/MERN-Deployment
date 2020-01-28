@@ -44,33 +44,39 @@ export default props => {
         <form onSubmit={adopt}>
             <p>
                 <label>Pet name: </label>
+                &nbsp;
                 <input type="text" onChange={e=>setName(e.target.value)}/>
                 <span>{errors.name ? errors.name.message: ""}</span>
             </p>
             <p>
                 <label>Pet type: </label>
+                &nbsp;
                 <input type="text" onChange={e=>setType(e.target.value)}/>
                 <span>{errors.type ? errors.type.message: ""}</span>
             </p>
             <p>
                 <label>Description: </label>
+                &nbsp;
                 <input type="text" onChange={e=>setDescription(e.target.value)}/>
                 <span>{errors.description ? errors.description.message: ""}</span>
             </p>
             <p>Skills:</p>
             <p>
                 <label>Skill 1: </label>
+                &nbsp;
                 <input type="text" onChange={e=>setSkill1(e.target.value)}/>
             </p>
             <p>
                 <label>Skill 2: </label>
+                &nbsp;
                 <input type="text" onChange={e=>setSkill2(e.target.value)}/>
             </p>
             <p>
                 <label>Skill 3: </label>
+                &nbsp;
                 <input type="text" onChange={e=>setSkill3(e.target.value)}/>
             </p>
-            <input value="Add pet" type="submit" />
+            <button class="btn btn-primary" type="submit">Add pet</button>
             &nbsp;
             <Link to="/pets">Cancel</Link>
         </form>

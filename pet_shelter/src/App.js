@@ -6,6 +6,7 @@ import Main from './views/Main';
 import Details from './views/Details';
 import Update from './views/Update';
 import New from './views/New';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
@@ -15,7 +16,7 @@ function App() {
       <Router>
         <Main path="/pets"/>
         <New path="/pets/new"/>
-        <Details path="/pets/:id"/>
+        <Details className="Jumbotron" path="/pets/:id"/>
         <Update path="/pets/:id/edit"/>
       </Router>
     </div>

@@ -35,8 +35,8 @@ export default props => {
         <div>
             {props.pet.map((pet, index)=>{
                 return(
-                    <div>
-                        <table>
+                    <div class="container">
+                        <table class="table table-sm table-striped table-bordered">
                             <tr>
                                 <th>Name</th>
                                 <th>Type</th>
@@ -50,7 +50,7 @@ export default props => {
                                 <td>{pet.type}</td>
                                 <td>
                                     <Link to={"/pets/" + pet._id}>Details</Link>
-                                    &nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <Link to={"/pets/" + pet._id + "/edit"}>Edit</Link>
                                 </td>
                             </tr>

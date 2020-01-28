@@ -20,10 +20,14 @@ export default () => {
         setPet(pet.filter(pet => pet._id != petId));
     }
     return (
-        <div>
-            <h3>Pet Shelter</h3>
-            <h4>Know of a pet needing a home?</h4>
-            <PetForm/>
+        <div className="container">
+            <div className="jumbotron" style={{
+                backgroundColor: "Dodgerblue"
+            }}>
+                <h3>Pet Shelter</h3>
+                <h4>Know of a pet needing a home?</h4>
+            </div>
+                <PetForm/>
             
             
         </div>

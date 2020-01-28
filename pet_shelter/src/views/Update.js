@@ -58,8 +58,14 @@ export default props => {
     }
     return (
         <div>
+            <div className="container">
+                <div className="jumbotron" style={{
+                    backgroundColor: "Dodgerblue"
+                }}>
             <h3>Pet Shelter</h3>
             <h4>Edit this pet</h4>
+            </div>
+            </div>
             <form onSubmit={adopt}>
                 <p>
                     <label>Pet name:</label><br />
@@ -107,7 +113,7 @@ export default props => {
                     value={skill3} 
                     onChange={(e) => { setSkill3(e.target.value) }} />
                 </p>
-                <input value="Edit pet" type="submit" />
+                <button class="btn btn-primary" type="submit">Edit pet</button>
                 &nbsp;
                 <Link to="/pets">Cancel</Link>
             </form>

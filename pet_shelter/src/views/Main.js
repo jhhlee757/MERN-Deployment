@@ -34,8 +34,14 @@ export default () => {
     }
     return (
         <div>
+            <div className="container">
+                <div className="jumbotron" style={{
+                    backgroundColor: "Dodgerblue"
+                }}>
             <h3>Pet Shelter</h3>
             <h4>These pets are looking for a home!</h4>
+            </div>
+            </div>
             <Link to="/pets/new">Add a pet to the shelter</Link>
             <br/><br/>
             {loaded && <PetList pet={pet} removeFromDom={removeFromDom}/>}
