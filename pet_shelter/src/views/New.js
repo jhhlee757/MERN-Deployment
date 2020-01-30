@@ -22,14 +22,12 @@ export default () => {
     return (
         <div className="container">
             <div className="jumbotron" style={{
-                backgroundColor: "Dodgerblue"
+                backgroundColor: "SkyBlue"
             }}>
                 <h3>Pet Shelter</h3>
                 <h4>Know of a pet needing a home?</h4>
             </div>
-                <PetForm/>
-            
-            
+            <PetForm/>   
         </div>
     )
 }

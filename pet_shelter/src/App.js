@@ -16,7 +16,7 @@ function App() {
       <Router>
         <Main path="/pets"/>
         <New path="/pets/new"/>
-        <Details className="Jumbotron" path="/pets/:id"/>
+        <Details path="/pets/:id"/>
         <Update path="/pets/:id/edit"/>
       </Router>
     </div>

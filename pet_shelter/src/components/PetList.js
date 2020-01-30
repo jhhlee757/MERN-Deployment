@@ -45,7 +45,6 @@ export default props => {
                             <tr key={pet._id}>
                                 <td>
                                     {pet.name}
-                                    {/* {loaded && <PetList pet={pet} removeFromDom={removeFromDom}/>} */}
                                 </td>
                                 <td>{pet.type}</td>
                                 <td>
@@ -57,11 +56,6 @@ export default props => {
                 
                         </table>
                         <br/>
-                        {/* <p>
-                            {pet.name}
-                            &nbsp;
-                            <button onClick={(e)=>{deletePet(pet._id)}}>Delete</button>
-                        </p> */}
                     </div>
                 )  
             })}

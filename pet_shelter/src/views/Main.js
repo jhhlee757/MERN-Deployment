@@ -36,11 +36,11 @@ export default () => {
         <div>
             <div className="container">
                 <div className="jumbotron" style={{
-                    backgroundColor: "Dodgerblue"
+                    backgroundColor: "SkyBlue"
                 }}>
-            <h3>Pet Shelter</h3>
-            <h4>These pets are looking for a home!</h4>
-            </div>
+                    <h3>Pet Shelter</h3>
+                    <h4>These pets are looking for a home!</h4>
+                </div>
             </div>
             <Link to="/pets/new">Add a pet to the shelter</Link>
             <br/><br/>

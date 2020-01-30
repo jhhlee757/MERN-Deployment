@@ -45,10 +45,10 @@ export default props => {
         <div>
             <div className="container">
                 <div className="jumbotron" style={{
-                    backgroundColor: "Dodgerblue"
+                    backgroundColor: "SkyBlue"
                 }}>
-                <h3>Pet Shelter</h3>
-                <h4>Details about {pet.name}</h4>
+                    <h3>Pet Shelter</h3>
+                    <h4>Details about {pet.name}</h4>
                 </div>
                 <p>Pet type: {pet.type}</p>
                 <p>Description: {pet.description}</p>

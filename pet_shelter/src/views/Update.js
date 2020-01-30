@@ -20,7 +20,7 @@ export default props => {
                 if(res.data.errors){
                     setErrors(res.data.errors);
                 } else {
-                    navigate("/pets/" + id);
+                    navigate("/pets");
                 }
             })
             .catch(err => console.log(err));
@@ -60,13 +60,13 @@ export default props => {
         <div>
             <div className="container">
                 <div className="jumbotron" style={{
-                    backgroundColor: "Dodgerblue"
+                    backgroundColor: "SkyBlue"
                 }}>
-            <h3>Pet Shelter</h3>
-            <h4>Edit this pet</h4>
+                    <h3>Pet Shelter</h3>
+                    <h4>Edit this pet</h4>
+                </div>
             </div>
-            </div>
-            <form onSubmit={adopt}>
+            <form onSubmit={updatePet}>
                 <p>
                     <label>Pet name:</label><br />
                     <input type="text" 
